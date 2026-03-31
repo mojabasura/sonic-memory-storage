@@ -28,18 +28,22 @@
     />
 
     <style>
+      /* BODY */
       body {
         width: 6000px;
         height: 4000px;
         margin: 0;
-        background-image: url("https://raw.githubusercontent.com/mojabasura/sonic-memory-storage/main/images/moss.gif");
-        background-repeat: repeat;
+        background-image: url(
+          "https://raw.githubusercontent.com/mojabasura/sonic-memory-storage/main/images/moss.gif"
+        );
       }
 
+      /* GENERAL IMAGES */
       img {
         position: absolute;
       }
 
+      /* TYPOGRAPHY */
       h3 {
         font-family: "Times New Roman";
         background-color: yellow;
@@ -58,6 +62,7 @@
         background-color: blue;
       }
 
+      /* MARQUEE */
       marquee {
         font-family: cursive;
         font-size: 150px;
@@ -65,9 +70,10 @@
         font-variant: normal;
         font-weight: 400;
         line-height: 300px;
-        position: absolute;
+        color: yellow;
       }
 
+      /* ROTATING IMAGE */
       @keyframes rotateImage {
         0% {
           transform: rotate(0deg);
@@ -82,6 +88,7 @@
         width: 200px;
       }
 
+      /* HIDDEN IMAGE */
       #triggeredImage {
         display: none;
         position: absolute;
@@ -90,6 +97,7 @@
         left: 4500px;
       }
 
+      /* BUTTON */
       button {
         font-size: 18px;
         color: white;
@@ -97,15 +105,15 @@
         font-family: "Arial Narrow";
         border: none;
         cursor: pointer;
-        position: absolute;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        position: absolute;
       }
     </style>
   </head>
 
   <body>
+    <!-- TYPOGRAPHY & ELEMENTS -->
     <div style="z-index: 10">
-      <!-- Header & text -->
       <h1 class="header" style="position: absolute; top: 100px; left: 200px">
         the sweetest moments are fleeting and remind me of life's temporality
       </h1>
@@ -118,10 +126,10 @@
       <img
         class="rotating"
         style="position: absolute; top: 3500px; left: 1000px"
-        src="https://cdn.glitch.global/6b1151d8-1caa-488a-ac35-fcfba75da26c/baby-mo.jpg?v=1729188016820"
+        src="https://raw.githubusercontent.com/mojabasura/sonic-memory-storage/main/images/baby-mo.png"
       />
 
-      <!-- Marquees -->
+      <!-- Horizontal marquees -->
       <marquee
         style="position: absolute; top: 450px; width: 6000px"
         direction="right"
@@ -153,14 +161,13 @@
         style="position: absolute; top: 3900px; width: 450px; left: 5000px"
         src="https://cdn.glitch.global/6b1151d8-1caa-488a-ac35-fcfba75da26c/screenshot-edit-thumbs%20up!.png?v=1729190225095"
       />
-
       <img
         style="position: absolute; top: 3915px; width: 450px; left: 4990px"
         src="https://cdn.glitch.global/6b1151d8-1caa-488a-ac35-fcfba75da26c/screenshot-edit-thumbs%20up!.png?v=1729190225095"
       />
     </div>
 
-    <!-- Vertical marquee -->
+    <!-- VERTICAL MARQUEE -->
     <marquee
       class="text"
       style="
@@ -171,7 +178,7 @@
         top: 800px;
         left: 4000px;
         color: yellow;
-        background-image: url(https://cdn.glitch.global/6b1151d8-1caa-488a-ac35-fcfba75da26c/000001090028.jpg?v=1729212920788);
+        background-image: url('https://raw.githubusercontent.com/mojabasura/sonic-memory-storage/main/images/car.JPG');
         background-size: 100%;
       "
       direction="up"
@@ -180,7 +187,7 @@
       Softness is everywhere memory exists. <i> Welcome memory with a warm embrace, like an old friend. </i>
     </marquee>
 
-    <!-- Fixed corner gif -->
+    <!-- Fixed top-right gif -->
     <img
       style="position: fixed; width: 100px; top: 0px; right: 0px"
       src="https://usercontent.one/wp/www.theappealoftheunreal.com/wp-content/uploads/2020/05/RotatingTree_1.gif"
@@ -198,7 +205,7 @@
       src="https://i.gifer.com/1Z1w.gif"
     />
 
-    <!-- YouTube iframe -->
+    <!-- YouTube video -->
     <iframe
       width="315"
       height="315"
@@ -226,23 +233,21 @@
       them (~˘▾˘)~
     </h2>
 
-    <!-- Button to trigger image -->
+    <!-- BUTTON & TRIGGER IMAGE -->
     <button
       onclick="showImage()"
       style="position: absolute; width: 100px; top: 3500px; left: 4500px"
     >
       Press Me
     </button>
-
-    <!-- Hidden triggered image -->
     <img
       id="triggeredImage"
-      style="position: absolute; width: 500px; top: 3500px; left: 4500px"
+      style="width: 500px; top: 3500px; left: 4500px"
       src="https://cdn.glitch.global/6b1151d8-1caa-488a-ac35-fcfba75da26c/ascii-portrait.png?v=1729191471306"
       alt="ASCII Portrait"
     />
 
-    <!-- Mo section -->
+    <!-- MO SECTION -->
     <div style="position: absolute; top: 1500px">
       <img
         style="position: absolute; left: 2000px; width: 1000px"
@@ -265,66 +270,34 @@
       />
     </div>
 
-    <!-- Audio elements -->
+    <!-- AUDIO ELEMENTS -->
     <div>
       <audio controls style="position: absolute; top: 1600px; left: 150px">
-        <source
-          src="https://cdn.glitch.global/6b1151d8-1caa-488a-ac35-fcfba75da26c/beach_br33ze.m4a"
-          type="audio/mp4"
-        />
+        <source src="https://cdn.glitch.global/6b1151d8-1caa-488a-ac35-fcfba75da26c/beach_br33ze.m4a" type="audio/mp4"/>
       </audio>
-
       <audio controls style="position: absolute; top: 360px; left: 1500px">
-        <source
-          src="https://cdn.glitch.global/6b1151d8-1caa-488a-ac35-fcfba75da26c/piano-%40-the-function_02.m4a"
-          type="audio/mp4"
-        />
+        <source src="https://cdn.glitch.global/6b1151d8-1caa-488a-ac35-fcfba75da26c/piano-%40-the-function_02.m4a" type="audio/mp4"/>
       </audio>
-
       <audio controls style="position: absolute; top: 3875px; left: 2700px">
-        <source
-          src="https://cdn.glitch.global/6b1151d8-1caa-488a-ac35-fcfba75da26c/stone_edit.mp3"
-          type="audio/mp3"
-        />
+        <source src="https://cdn.glitch.global/6b1151d8-1caa-488a-ac35-fcfba75da26c/stone_edit.mp3" type="audio/mp3"/>
       </audio>
-
       <audio controls style="position: absolute; top: 1450px; left: 590px">
-        <source
-          src="https://cdn.glitch.global/6b1151d8-1caa-488a-ac35-fcfba75da26c/fast_food_bell_edit.mp3"
-          type="audio/mp3"
-        />
+        <source src="https://cdn.glitch.global/6b1151d8-1caa-488a-ac35-fcfba75da26c/fast_food_bell_edit.mp3" type="audio/mp3"/>
       </audio>
-
       <audio controls style="position: absolute; top: 500px; left: 3500px">
-        <source
-          src="https://cdn.glitch.global/6b1151d8-1caa-488a-ac35-fcfba75da26c/Crowded_sushi_restaurant.m4a"
-          type="audio/mp4"
-        />
+        <source src="https://cdn.glitch.global/6b1151d8-1caa-488a-ac35-fcfba75da26c/Crowded_sushi_restaurant.m4a" type="audio/mp4"/>
       </audio>
-
       <audio controls style="position: absolute; top: 787px; left: 4500px">
-        <source
-          src="https://cdn.glitch.global/6b1151d8-1caa-488a-ac35-fcfba75da26c/chinese_restaurant.m4a"
-          type="audio/mp4"
-        />
+        <source src="https://cdn.glitch.global/6b1151d8-1caa-488a-ac35-fcfba75da26c/chinese_restaurant.m4a" type="audio/mp4"/>
       </audio>
-
       <audio controls style="position: absolute; top: 1000px; left: 2678px">
-        <source
-          src="https://cdn.glitch.global/6b1151d8-1caa-488a-ac35-fcfba75da26c/Bird_chirps.m4a"
-          type="audio/mp4"
-        />
+        <source src="https://cdn.glitch.global/6b1151d8-1caa-488a-ac35-fcfba75da26c/Bird_chirps.m4a" type="audio/mp4"/>
       </audio>
-
       <audio controls style="position: absolute; top: 3250px; left: 3600px">
-        <source
-          src="https://cdn.glitch.global/6b1151d8-1caa-488a-ac35-fcfba75da26c/sweet%20sweet%20fantasy%20baby.m4a"
-          type="audio/mp4"
-        />
+        <source src="https://cdn.glitch.global/6b1151d8-1caa-488a-ac35-fcfba75da26c/sweet%20sweet%20fantasy%20baby.m4a" type="audio/mp4"/>
       </audio>
     </div>
 
-    <!-- JS -->
     <script>
       function showImage() {
         document.getElementById("triggeredImage").style.display = "block";
